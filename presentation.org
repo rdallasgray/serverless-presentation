@@ -1,0 +1,43 @@
+* Basic Outline
+** Who we are and what we do
+** We made a small number of full-stack monolithic applications
+
+They were built ad-hoc with old-style FE tools.  Some of these
+applications grew to support multiple, often disparate groups of
+users.  Eventually some had many different modes, with different UI,
+auth, etc.  This was (is!) difficult to maintain.
+
+** We knew we would be doing more front-end work
+
+We started to develop front-end only apps using newer technologies.
+
+** We took on a new project
+
+It would necessitate lots of front-end apps, all different in UI and
+other configuration. Each app would speak to a similar API drawing
+from the same set of data.
+
+** Initially we hosted them inside the monolithic back-end app
+
+This became problematic because
+- Each app might need its own SSL configuration, its own endpoint,
+  etc.
+- The monolithic app changed whenever one of the internal apps changed
+
+** We moved to using small Nginx servers in EC2
+
+This was better but still a pain.
+- We had to maintain a full production environment for each app (scaling, load-balancing etc.)
+- There were issues with Nginx caching DNSs, so when a back-end was
+  redeployed everything stopped working
+- Expensive
+
+** SSL on CloudFront was prohibitively expensive
+
+(Find out exactly how much)
+
+** SNI didn't work with technologies we needed
+
+(Find out which ones)
+
+**
