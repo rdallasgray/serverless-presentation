@@ -1,5 +1,11 @@
 * Basic Outline
 ** Who we are and what we do
+
+We are very much an AWS shop. We use AWS pretty much exclusively for
+our infrastructure (list of services we use).
+
+We create services, mainly geospatial, for mainly corporate clients.
+
 ** We made a small number of full-stack monolithic applications
 
 They were built ad-hoc with old-style FE tools.  Some of these
