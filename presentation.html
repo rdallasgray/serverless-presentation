@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title></title>
+<meta name="author" content="(Robert Dallas Gray)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="file:///Users/robertdallasgray/.nvm/v4.4.4/lib/node_modules/reveal.js/css/reveal.css"/>
+
+<link rel="stylesheet" href="file:///Users/robertdallasgray/.nvm/v4.4.4/lib/node_modules/reveal.js/css/theme/black.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'file:///Users/robertdallasgray/.nvm/v4.4.4/lib/node_modules/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="table-of-contents">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#/slide-orgheadline2">Hello!</a>
+<ul>
+<li><a href="#/slide-orgheadline1">Robert Dallas Gray</a></li>
+</ul>
+</li>
+<li><a href="#/slide-orgheadline21">Geo.me</a>
+<ul>
+<li><a href="#/slide-orgheadline3"></a></li>
+<li><a href="#/slide-orgheadline4"></a></li>
+<li><a href="#/slide-orgheadline5"></a></li>
+<li><a href="#/slide-orgheadline6">EC2</a></li>
+<li><a href="#/slide-orgheadline7">RDS</a></li>
+<li><a href="#/slide-orgheadline8">S3</a></li>
+<li><a href="#/slide-orgheadline9">Route 53</a></li>
+<li><a href="#/slide-orgheadline10">Elasticache</a></li>
+<li><a href="#/slide-orgheadline11">SQS, SNS</a></li>
+<li><a href="#/slide-orgheadline12">CloudFront</a></li>
+<li><a href="#/slide-orgheadline13">Who we are and what we do</a></li>
+<li><a href="#/slide-orgheadline14">We made a small number of full-stack monolithic applications</a></li>
+<li><a href="#/slide-orgheadline15">We knew we would be doing more front-end work</a></li>
+<li><a href="#/slide-orgheadline16">We took on a new project</a></li>
+<li><a href="#/slide-orgheadline17">Initially we hosted them inside the monolithic back-end app</a></li>
+<li><a href="#/slide-orgheadline18">We moved to using small Nginx servers in EC2</a></li>
+<li><a href="#/slide-orgheadline19">We reckoned we could use CloudFront for proxying</a></li>
+<li><a href="#/slide-orgheadline20">Google stopped supporting something</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section>
+<section id="slide-orgheadline2">
+<h2 id="orgheadline2">Hello!</h2>
+<div class="outline-text-2" id="text-orgheadline2">
+</div></section>
+<section id="slide-orgheadline1">
+<h3 id="orgheadline1">Robert Dallas Gray</h3>
+<p>
+robert@geo.me
+</p>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline21">
+<h2 id="orgheadline21">Geo.me</h2>
+<div class="outline-text-2" id="text-orgheadline21">
+</div></section>
+<section id="slide-orgheadline3" data-background="./btwifiapi.gif">
+<h3 id="orgheadline3"></h3>
+</section>
+<section id="slide-orgheadline4" data-background="./btsport.gif">
+<h3 id="orgheadline4"></h3>
+</section>
+<section id="slide-orgheadline5" data-background="./aws.svg">
+<h3 id="orgheadline5"></h3>
+</section>
+<section id="slide-orgheadline6" data-background="./aws.svg">
+<h3 id="orgheadline6">EC2</h3>
+<p>
+API servers, load balancing, scaling &#x2026;
+</p>
+</section>
+<section id="slide-orgheadline7" data-background="./aws.svg">
+<h3 id="orgheadline7">RDS</h3>
+<p>
+Databases (Postgres/GIS)
+</p>
+</section>
+<section id="slide-orgheadline8" data-background="./aws.svg">
+<h3 id="orgheadline8">S3</h3>
+<p>
+Static file storage, artefacts &#x2026;
+</p>
+</section>
+<section id="slide-orgheadline9" data-background="./aws.svg">
+<h3 id="orgheadline9">Route 53</h3>
+<p>
+Routing
+</p>
+</section>
+<section id="slide-orgheadline10" data-background="./aws.svg">
+<h3 id="orgheadline10">Elasticache</h3>
+<p>
+Ephemeral storage, caching
+</p>
+</section>
+<section id="slide-orgheadline11" data-background="./aws.svg">
+<h3 id="orgheadline11">SQS, SNS</h3>
+<p>
+Fanning to queues for offline tasks
+</p>
+</section>
+<section id="slide-orgheadline12" data-background="./aws.svg">
+<h3 id="orgheadline12">CloudFront</h3>
+<p>
+Edge caching and &#x2026; ?
+</p>
+
+</section>
+<section id="slide-orgheadline13">
+<h3 id="orgheadline13">Who we are and what we do</h3>
+<p>
+We are very much an AWS shop. We use AWS pretty much exclusively for
+our infrastructure (list of services we use).
+</p>
+
+<p>
+We create services, mainly geospatial, for mainly corporate clients.
+</p>
+
+</section>
+<section id="slide-orgheadline14">
+<h3 id="orgheadline14">We made a small number of full-stack monolithic applications</h3>
+<p>
+They were built ad-hoc with old-style FE tools.  Some of these
+applications grew to support multiple, often disparate groups of
+users.  Eventually some had many different modes, with different UI,
+auth, etc.  This was (is!) difficult to maintain.
+</p>
+
+</section>
+<section id="slide-orgheadline15">
+<h3 id="orgheadline15">We knew we would be doing more front-end work</h3>
+<p>
+We started to develop front-end only apps using newer technologies.
+</p>
+
+<p>
+We thought we could have these be completely static, hosted on S3, but
+an issue we encountered early on was Cross-Origin restrictions
+(browsers won't let applications XHR to endpoints on different
+domains). CORS didn't work well on IE particularly. Cookies were a
+problem. So we wanted our FE apps to be on the same domain as their
+back ends. (DIAGRAM)
+</p>
+
+</section>
+<section id="slide-orgheadline16">
+<h3 id="orgheadline16">We took on a new project</h3>
+<p>
+It would necessitate lots of front-end apps, all different in UI and
+other configuration. Each app would speak to a similar API drawing
+from the same set of data. (DIAGRAM)
+</p>
+
+</section>
+<section id="slide-orgheadline17">
+<h3 id="orgheadline17">Initially we hosted them inside the monolithic back-end app</h3>
+<p>
+(DIAGRAM &#x2013; different paths per app)
+</p>
+
+<p>
+No cross origin problems!
+</p>
+
+<p>
+This became problematic because
+</p>
+
+<ul>
+<li>Each app might need its own SSL configuration, its own endpoint,
+etc.</li>
+<li>The monolithic app changed whenever one of the internal apps changed</li>
+<li>Long paths</li>
+
+</ul>
+
+</section>
+<section id="slide-orgheadline18">
+<h3 id="orgheadline18">We moved to using small Nginx servers in EC2</h3>
+<p>
+Proxying inside Nginx so that a path (/api) proxied to the API server (DIAGRAM).
+</p>
+
+<p>
+This was better but still a pain.
+</p>
+
+<ul>
+<li>We had to maintain a full production environment for each app (scaling, load-balancing etc.)</li>
+<li>There were issues with Nginx caching DNSs, so when a back-end was
+redeployed everything stopped working</li>
+<li>Expensive</li>
+
+</ul>
+
+</section>
+<section id="slide-orgheadline19">
+<h3 id="orgheadline19">We reckoned we could use CloudFront for proxying</h3>
+<p>
+(DIAGRAM &#x2013; CF, S3, API Server)
+</p>
+
+<ul>
+<li>SSL on CloudFront was prohibitively expensive (Find out exactly how much)</li>
+<li>SNI didn't work with technologies we needed (Find out which ones)</li>
+
+</ul>
+
+</section>
+<section id="slide-orgheadline20">
+<h3 id="orgheadline20">Google stopped supporting something</h3>
+<p>
+(Find out what)
+</p>
+
+<p>
+It meant we could use SNI (DIAGRAM)
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="file:///Users/robertdallasgray/.nvm/v4.4.4/lib/node_modules/reveal.js/lib/js/head.min.js"></script>
+<script src="file:///Users/robertdallasgray/.nvm/v4.4.4/lib/node_modules/reveal.js/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'file:///Users/robertdallasgray/.nvm/v4.4.4/lib/node_modules/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'file:///Users/robertdallasgray/.nvm/v4.4.4/lib/node_modules/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'file:///Users/robertdallasgray/.nvm/v4.4.4/lib/node_modules/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'file:///Users/robertdallasgray/.nvm/v4.4.4/lib/node_modules/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'file:///Users/robertdallasgray/.nvm/v4.4.4/lib/node_modules/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>

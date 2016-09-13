@@ -1,4 +1,58 @@
-* Basic Outline
+#+OPTIONS: reveal_title_slide:nil num:nil
+#+REVEAL_THEME: black
+
+* Hello!
+** Robert Dallas Gray
+robert@geo.me
+* Geo.me
+** 
+  :PROPERTIES:
+  :reveal_background: ./btwifiapi.gif
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./btsport.gif
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./aws.svg
+  :END:
+** EC2
+  :PROPERTIES:
+  :reveal_background: ./aws.svg
+  :END:
+API servers, load balancing, scaling 
+** RDS
+  :PROPERTIES:
+  :reveal_background: ./aws.svg
+  :END:
+Databases (Postgres/GIS)
+** S3
+  :PROPERTIES:
+  :reveal_background: ./aws.svg
+  :END:
+Static file storage, artefacts 
+** Route 53
+  :PROPERTIES:
+  :reveal_background: ./aws.svg
+  :END:
+Routing
+** Elasticache
+  :PROPERTIES:
+  :reveal_background: ./aws.svg
+  :END:
+Ephemeral storage, caching
+** SQS, SNS
+  :PROPERTIES:
+  :reveal_background: ./aws.svg
+  :END:
+Fanning to queues for offline tasks
+** CloudFront
+  :PROPERTIES:
+  :reveal_background: ./aws.svg
+  :END:
+Edge caching and ... ?
+
 ** Who we are and what we do
 
 We are very much an AWS shop. We use AWS pretty much exclusively for
