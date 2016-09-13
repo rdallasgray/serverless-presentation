@@ -5,6 +5,8 @@
 ** Robert Dallas Gray
 robert@geo.me
 * Geo.me
+* Geospatial applications
+* Client logos
 ** 
   :PROPERTIES:
   :reveal_background: ./btwifiapi.gif
@@ -13,6 +15,9 @@ robert@geo.me
   :PROPERTIES:
   :reveal_background: ./btsport.gif
   :END:
+** BUPA
+** Pennzoil
+** Truckrouting
 ** 
   :PROPERTIES:
   :reveal_background: ./aws.svg
