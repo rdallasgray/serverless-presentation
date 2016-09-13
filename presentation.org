@@ -57,7 +57,9 @@ Fanning to queues for offline tasks
   :reveal_background: ./aws.svg
   :END:
 Edge caching and ... ?
-
+* Serverless Architecture
+Fowler article etc
+Replacing servers with services
 ** Who we are and what we do
 
 We are very much an AWS shop. We use AWS pretty much exclusively for
