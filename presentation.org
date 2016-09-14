@@ -58,14 +58,36 @@ Fanning to queues for offline tasks
   :END:
 Edge caching and ... ?
 * Serverless Architecture
-Fowler article etc
-Replacing servers with services
-** Who we are and what we do
-
-We are very much an AWS shop. We use AWS pretty much exclusively for
-our infrastructure (list of services we use).
-
-We create services, mainly geospatial, for mainly corporate clients.
+** 
+  :PROPERTIES:
+  :reveal_background: ./aws-architecture-rds.svg
+  :reveal_background_size: 400px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./aws-architecture-ec2.svg
+  :reveal_background_size: 400px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./aws-architecture-asg.svg
+  :reveal_background_size: 400px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./aws-architecture-elb.svg
+  :reveal_background_size: 400px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./aws-architecture-cf.svg
+  :reveal_background_size: 400px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./aws-architecture-route53.svg
+  :reveal_background_size: 400px
+  :END:
 
 ** We made a small number of full-stack monolithic applications
 
