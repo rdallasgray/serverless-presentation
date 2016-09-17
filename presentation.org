@@ -217,6 +217,40 @@ Port number
   :reveal_background_size: 600px
   :END:
 ** 
+  :PROPERTIES:
+  :reveal_background: ./api-server-bb.svg
+  :reveal_background_size: 1080px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./api-server-bb-nginx.svg
+  :reveal_background_size: 1080px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./api-server-bb-nginx-ec2.svg
+  :reveal_background_size: 1080px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./api-server-bb-nginx-asg.svg
+  :reveal_background_size: 1080px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./api-server-bb-nginx-elb.svg
+  :reveal_background_size: 1080px
+  :END:
+** Serverless
+  :PROPERTIES:
+  :reveal_background: ./api-server-bb-nginx-elb-30pc.svg
+  :reveal_background_size: 1080px
+  :END:
+** Servermore
+  :PROPERTIES:
+  :reveal_background: ./api-server-bb-nginx-elb-30pc.svg
+  :reveal_background_size: 1080px
+  :END:
 ** We moved to using small Nginx servers in EC2
 
 Proxying inside Nginx so that a path (/api) proxied to the API server (DIAGRAM).
