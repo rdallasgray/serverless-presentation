@@ -6,19 +6,38 @@
 robert@geo.me
 * Geo.me
 * Geospatial applications
-* Client logos
 ** 
   :PROPERTIES:
   :reveal_background: ./btwifiapi.gif
   :END:
 ** 
   :PROPERTIES:
+  :reveal_background: ./mma.gif
+  :reveal_background_size: 400px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./btwifi.gif
+  :reveal_background_size: 400px
+  :END:
+** 
+  :PROPERTIES:
   :reveal_background: ./btsport.gif
   :END:
-** BUPA
-** Pennzoil
-** Truckrouting
 ** 
+  :PROPERTIES:
+  :reveal_background: ./bupa.gif
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./bp.gif
+  :END:
+* Simple things
+#+ATTR_REVEAL: :frag t
+Performantly
+#+ATTR_REVEAL: :frag t
+At scale
+* 
   :PROPERTIES:
   :reveal_background: ./aws.svg
   :END:
@@ -26,7 +45,7 @@ robert@geo.me
   :PROPERTIES:
   :reveal_background: ./aws.svg
   :END:
-API servers, load balancing, scaling 
+  API servers, load balancing, scaling 
 ** RDS
   :PROPERTIES:
   :reveal_background: ./aws.svg
@@ -59,6 +78,7 @@ Fanning to queues for offline tasks
 Edge caching and ... ?
 * Serverless Architecture
 ** 
+** 
   :PROPERTIES:
   :reveal_background: ./aws-architecture-rds.svg
   :reveal_background_size: 400px
@@ -88,44 +108,115 @@ Edge caching and ... ?
   :reveal_background: ./aws-architecture-route53.svg
   :reveal_background_size: 400px
   :END:
-
-** We made a small number of full-stack monolithic applications
-
-They were built ad-hoc with old-style FE tools.  Some of these
-applications grew to support multiple, often disparate groups of
-users.  Eventually some had many different modes, with different UI,
-auth, etc.  This was (is!) difficult to maintain.
-
-** We knew we would be doing more front-end work
-
-We started to develop front-end only apps using newer technologies.
-
-We thought we could have these be completely static, hosted on S3, but
-an issue we encountered early on was Cross-Origin restrictions
-(browsers won't let applications XHR to endpoints on different
-domains). CORS didn't work well on IE particularly. Cookies were a
-problem. So we wanted our FE apps to be on the same domain as their
-back ends. (DIAGRAM)
-
-** We took on a new project
-
-It would necessitate lots of front-end apps, all different in UI and
-other configuration. Each app would speak to a similar API drawing
-from the same set of data. (DIAGRAM)
-
-** Initially we hosted them inside the monolithic back-end app
-
-(DIAGRAM -- different paths per app)
-
-No cross origin problems!
-
-This became problematic because
-
-- Each app might need its own SSL configuration, its own endpoint,
-  etc.
-- The monolithic app changed whenever one of the internal apps changed
-- Long paths
-
+** 
+  :PROPERTIES:
+  :reveal_background: ./aws-architecture-dynamo.svg
+  :reveal_background_size: 400px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./aws-architecture-lambda.svg
+  :reveal_background_size: 400px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./aws-architecture-api-gateway.svg
+  :reveal_background_size: 400px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./aws-architecture-s3.svg
+  :reveal_background_size: 400px
+  :END:
+** Replacing servers with services
+** Serverless
+** Less Servers
+** Fewer Servers
+* 
+  :PROPERTIES:
+  :reveal_background: ./api-server.svg
+  :reveal_background_size: 400px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./api-server-rails.svg
+  :reveal_background_size: 1080px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./api-server-jquery.svg
+  :reveal_background_size: 1080px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./api-server-jquery-2.svg
+  :reveal_background_size: 1080px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./api-server-jquery-3.svg
+  :reveal_background_size: 1080px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./api-server-jquery-4.svg
+  :reveal_background_size: 1080px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./api-server-jquery-5.svg
+  :reveal_background_size: 1080px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./api-server-rails.svg
+  :reveal_background_size: 1080px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./api-server-bb.svg
+  :reveal_background_size: 1080px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./api-server-bb-s3.svg
+  :reveal_background_size: 1080px
+  :END:
+** Same Origin Policy
+  :PROPERTIES:
+  :reveal_background: ./api-server-bb-s3-50pc.svg
+  :reveal_background_size: 1080px
+  :END:
+#+ATTR_REVEAL: :frag t
+URI scheme
+#+ATTR_REVEAL: :frag t
+Hostname
+#+ATTR_REVEAL: :frag t
+Port number
+** 
+  :PROPERTIES:
+  :reveal_background: ./api-server-bb-s3-tp.svg
+  :reveal_background_size: 1080px
+  :END:
+** CORS!
+  :PROPERTIES:
+  :reveal_background: ./api-server-bb-s3-50pc.svg
+  :reveal_background_size: 1080px
+  :END:
+** CORS!
+  :PROPERTIES:
+  :reveal_background: ./moss-fire.gif
+  :END:
+** CORS!
+  :PROPERTIES:
+  :reveal_background: ./chicken-feast.gif
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./ns.gif
+  :reveal_background_size: 600px
+  :END:
+** 
 ** We moved to using small Nginx servers in EC2
 
 Proxying inside Nginx so that a path (/api) proxied to the API server (DIAGRAM).
