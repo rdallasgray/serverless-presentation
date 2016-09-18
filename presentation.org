@@ -198,7 +198,7 @@ Port number
   :reveal_background: ./api-server-bb-s3-tp.svg
   :reveal_background_size: 1080px
   :END:
-** CORS!
+* CORS!
   :PROPERTIES:
   :reveal_background: ./api-server-bb-s3-50pc.svg
   :reveal_background_size: 1080px
@@ -216,7 +216,7 @@ Port number
   :reveal_background: ./ns.gif
   :reveal_background_size: 600px
   :END:
-** 
+* 
   :PROPERTIES:
   :reveal_background: ./api-server-bb.svg
   :reveal_background_size: 1080px
@@ -251,26 +251,33 @@ Port number
   :reveal_background: ./api-server-bb-nginx-elb-30pc.svg
   :reveal_background_size: 1080px
   :END:
-** We moved to using small Nginx servers in EC2
-
-Proxying inside Nginx so that a path (/api) proxied to the API server (DIAGRAM).
-
-This was better but still a pain.
-
-- We had to maintain a full production environment for each app (scaling, load-balancing etc.)
-- There were issues with Nginx caching DNSs, so when a back-end was
-  redeployed everything stopped working
-- Expensive
-
-** We reckoned we could use CloudFront for proxying
-
-(DIAGRAM -- CF, S3, API Server)
-
-- SSL on CloudFront was prohibitively expensive (Find out exactly how much)
-- SNI didn't work with technologies we needed (Find out which ones)
-
-** Google stopped supporting something
-
-(Find out what)
-
-It meant we could use SNI (DIAGRAM)
+* 
+  :PROPERTIES:
+  :reveal_background: ./cf.svg
+  :reveal_background_size: 1080px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./cf-small.svg
+  :reveal_background_size: 1080px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./cf-bb-s3.svg
+  :reveal_background_size: 1080px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./cf-bb-s3-rails.svg
+  :reveal_background_size: 1080px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./cf-bb-s3-rails-route53.svg
+  :reveal_background_size: 1080px
+  :END:
+** SSL
+  :PROPERTIES:
+  :reveal_background: ./cf-bb-s3-rails-route53-30pc.svg
+  :reveal_background_size: 1080px
+  :END:

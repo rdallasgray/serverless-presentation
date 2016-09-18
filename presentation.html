@@ -78,7 +78,7 @@
 <li><a href="#/slide-orgheadline34">Fewer Servers</a></li>
 </ul>
 </li>
-<li><a href="#/slide-orgheadline61"></a>
+<li><a href="#/slide-orgheadline47"></a>
 <ul>
 <li><a href="#/slide-orgheadline36"></a></li>
 <li><a href="#/slide-orgheadline37"></a></li>
@@ -91,20 +91,32 @@
 <li><a href="#/slide-orgheadline44"></a></li>
 <li><a href="#/slide-orgheadline45">Same Origin Policy</a></li>
 <li><a href="#/slide-orgheadline46"></a></li>
-<li><a href="#/slide-orgheadline47">CORS!</a></li>
+</ul>
+</li>
+<li><a href="#/slide-orgheadline51">CORS!</a>
+<ul>
 <li><a href="#/slide-orgheadline48">CORS!</a></li>
 <li><a href="#/slide-orgheadline49">CORS!</a></li>
 <li><a href="#/slide-orgheadline50"></a></li>
-<li><a href="#/slide-orgheadline51"></a></li>
+</ul>
+</li>
+<li><a href="#/slide-orgheadline58"></a>
+<ul>
 <li><a href="#/slide-orgheadline52"></a></li>
 <li><a href="#/slide-orgheadline53"></a></li>
 <li><a href="#/slide-orgheadline54"></a></li>
 <li><a href="#/slide-orgheadline55"></a></li>
 <li><a href="#/slide-orgheadline56">Serverless</a></li>
 <li><a href="#/slide-orgheadline57">Servermore</a></li>
-<li><a href="#/slide-orgheadline58">We moved to using small Nginx servers in EC2</a></li>
-<li><a href="#/slide-orgheadline59">We reckoned we could use CloudFront for proxying</a></li>
-<li><a href="#/slide-orgheadline60">Google stopped supporting something</a></li>
+</ul>
+</li>
+<li><a href="#/slide-orgheadline64"></a>
+<ul>
+<li><a href="#/slide-orgheadline59"></a></li>
+<li><a href="#/slide-orgheadline60"></a></li>
+<li><a href="#/slide-orgheadline61"></a></li>
+<li><a href="#/slide-orgheadline62"></a></li>
+<li><a href="#/slide-orgheadline63">SSL</a></li>
 </ul>
 </li>
 </ul>
@@ -263,8 +275,8 @@ Edge caching and &#x2026; ?
 </section>
 </section>
 <section>
-<section id="slide-orgheadline61" data-background="./api-server.svg" data-background-size="400px">
-<h2 id="orgheadline61"></h2>
+<section id="slide-orgheadline47" data-background="./api-server.svg" data-background-size="400px">
+<h2 id="orgheadline47"></h2>
 </section>
 <section id="slide-orgheadline36" data-background="./api-server-rails.svg" data-background-size="1080px">
 <h3 id="orgheadline36"></h3>
@@ -308,8 +320,10 @@ Port number
 <section id="slide-orgheadline46" data-background="./api-server-bb-s3-tp.svg" data-background-size="1080px">
 <h3 id="orgheadline46"></h3>
 </section>
-<section id="slide-orgheadline47" data-background="./api-server-bb-s3-50pc.svg" data-background-size="1080px">
-<h3 id="orgheadline47">CORS!</h3>
+</section>
+<section>
+<section id="slide-orgheadline51" data-background="./api-server-bb-s3-50pc.svg" data-background-size="1080px">
+<h2 id="orgheadline51">CORS!</h2>
 </section>
 <section id="slide-orgheadline48" data-background="./moss-fire.gif">
 <h3 id="orgheadline48">CORS!</h3>
@@ -320,8 +334,10 @@ Port number
 <section id="slide-orgheadline50" data-background="./ns.gif" data-background-size="600px">
 <h3 id="orgheadline50"></h3>
 </section>
-<section id="slide-orgheadline51" data-background="./api-server-bb.svg" data-background-size="1080px">
-<h3 id="orgheadline51"></h3>
+</section>
+<section>
+<section id="slide-orgheadline58" data-background="./api-server-bb.svg" data-background-size="1080px">
+<h2 id="orgheadline58"></h2>
 </section>
 <section id="slide-orgheadline52" data-background="./api-server-bb-nginx.svg" data-background-size="1080px">
 <h3 id="orgheadline52"></h3>
@@ -341,47 +357,25 @@ Port number
 <section id="slide-orgheadline57" data-background="./api-server-bb-nginx-elb-30pc.svg" data-background-size="1080px">
 <h3 id="orgheadline57">Servermore</h3>
 </section>
-<section id="slide-orgheadline58">
-<h3 id="orgheadline58">We moved to using small Nginx servers in EC2</h3>
-<p>
-Proxying inside Nginx so that a path (/api) proxied to the API server (DIAGRAM).
-</p>
-
-<p>
-This was better but still a pain.
-</p>
-
-<ul>
-<li>We had to maintain a full production environment for each app (scaling, load-balancing etc.)</li>
-<li>There were issues with Nginx caching DNSs, so when a back-end was
-redeployed everything stopped working</li>
-<li>Expensive</li>
-
-</ul>
-
 </section>
-<section id="slide-orgheadline59">
-<h3 id="orgheadline59">We reckoned we could use CloudFront for proxying</h3>
-<p>
-(DIAGRAM &#x2013; CF, S3, API Server)
-</p>
-
-<ul>
-<li>SSL on CloudFront was prohibitively expensive (Find out exactly how much)</li>
-<li>SNI didn't work with technologies we needed (Find out which ones)</li>
-
-</ul>
-
+<section>
+<section id="slide-orgheadline64" data-background="./cf.svg" data-background-size="1080px">
+<h2 id="orgheadline64"></h2>
 </section>
-<section id="slide-orgheadline60">
-<h3 id="orgheadline60">Google stopped supporting something</h3>
-<p>
-(Find out what)
-</p>
-
-<p>
-It meant we could use SNI (DIAGRAM)
-</p>
+<section id="slide-orgheadline59" data-background="./cf-small.svg" data-background-size="1080px">
+<h3 id="orgheadline59"></h3>
+</section>
+<section id="slide-orgheadline60" data-background="./cf-bb-s3.svg" data-background-size="1080px">
+<h3 id="orgheadline60"></h3>
+</section>
+<section id="slide-orgheadline61" data-background="./cf-bb-s3-rails.svg" data-background-size="1080px">
+<h3 id="orgheadline61"></h3>
+</section>
+<section id="slide-orgheadline62" data-background="./cf-bb-s3-rails-route53.svg" data-background-size="1080px">
+<h3 id="orgheadline62"></h3>
+</section>
+<section id="slide-orgheadline63" data-background="./cf-bb-s3-rails-route53-30pc.svg" data-background-size="1080px">
+<h3 id="orgheadline63">SSL</h3>
 </section>
 </section>
 </div>
