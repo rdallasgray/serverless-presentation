@@ -7,9 +7,9 @@
 <style type="text/css">
 .underline { text-decoration: underline; }
 </style>
-<link rel="stylesheet" href="file:///Users/robertdallasgray/.nvm/v4.4.4/lib/node_modules/reveal.js/css/reveal.css"/>
+<link rel="stylesheet" href="./reveal.js/css/reveal.css"/>
 
-<link rel="stylesheet" href="file:///Users/robertdallasgray/.nvm/v4.4.4/lib/node_modules/reveal.js/css/theme/black.css" id="theme"/>
+<link rel="stylesheet" href="./reveal.js/css/theme/black.css" id="theme"/>
 
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
@@ -18,7 +18,7 @@
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = 'file:///Users/robertdallasgray/.nvm/v4.4.4/lib/node_modules/reveal.js/css/print/pdf.css';
+        link.href = './reveal.js/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
     }
 </script>
@@ -126,21 +126,39 @@
 <li><a href="#/slide-orgheadline70">N O P E</a></li>
 </ul>
 </li>
-<li><a href="#/slide-orgheadline78">SSL/TLS</a>
+<li><a href="#/slide-orgheadline79">SSL/TLS</a>
 <ul>
 <li><a href="#/slide-orgheadline72"></a></li>
 <li><a href="#/slide-orgheadline73"></a></li>
 <li><a href="#/slide-orgheadline74"></a></li>
-<li><a href="#/slide-orgheadline75"></a></li>
+<li><a href="#/slide-orgheadline75">Server Name Identification</a></li>
 <li><a href="#/slide-orgheadline76"></a></li>
-<li><a href="#/slide-orgheadline77">Server Name Identification</a></li>
+<li><a href="#/slide-orgheadline77"></a></li>
+<li><a href="#/slide-orgheadline78"></a></li>
 </ul>
 </li>
-<li><a href="#/slide-orgheadline80"></a>
+<li><a href="#/slide-orgheadline82"></a>
 <ul>
-<li><a href="#/slide-orgheadline79"></a></li>
+<li><a href="#/slide-orgheadline80"></a></li>
+<li><a href="#/slide-orgheadline81"></a></li>
 </ul>
 </li>
+<li><a href="#/slide-orgheadline84"></a>
+<ul>
+<li><a href="#/slide-orgheadline83">Thanks Google!</a></li>
+</ul>
+</li>
+<li><a href="#/slide-orgheadline91"></a>
+<ul>
+<li><a href="#/slide-orgheadline85"></a></li>
+<li><a href="#/slide-orgheadline86"></a></li>
+<li><a href="#/slide-orgheadline87"></a></li>
+<li><a href="#/slide-orgheadline88"></a></li>
+<li><a href="#/slide-orgheadline89">Serverless?</a></li>
+<li><a href="#/slide-orgheadline90"></a></li>
+</ul>
+</li>
+<li><a href="#/slide-orgheadline92">Thanks!</a></li>
 </ul>
 </div>
 </div>
@@ -177,13 +195,13 @@ robert@geo.me
 <section id="slide-orgheadline6" data-background="./btwifi.gif" data-background-size="400px">
 <h3 id="orgheadline6"></h3>
 </section>
-<section id="slide-orgheadline7" data-background="./btsport.gif">
+<section id="slide-orgheadline7" data-background="./bp.gif">
 <h3 id="orgheadline7"></h3>
 </section>
-<section id="slide-orgheadline8" data-background="./bupa.gif">
+<section id="slide-orgheadline8" data-background="./btsport.gif">
 <h3 id="orgheadline8"></h3>
 </section>
-<section id="slide-orgheadline9" data-background="./bp.gif">
+<section id="slide-orgheadline9" data-background="./bupa.gif">
 <h3 id="orgheadline9"></h3>
 </section>
 </section>
@@ -422,21 +440,11 @@ Port number
 </section>
 </section>
 <section>
-<section id="slide-orgheadline78">
-<h2 id="orgheadline78">SSL/TLS</h2>
-<ul class="fragment">
-<li>DNS resolves</li>
-
-</ul>
-<ul class="fragment">
+<section id="slide-orgheadline79">
+<h2 id="orgheadline79">SSL/TLS</h2>
+<ul>
 <li>Client connects, begins TLS negotiation</li>
-
-</ul>
-<ul class="fragment">
 <li>Cert presented to client</li>
-
-</ul>
-<ul class="fragment">
 <li>Client compares requested hostname with names referenced in cert</li>
 
 </ul>
@@ -450,40 +458,88 @@ Port number
 <section id="slide-orgheadline74" data-background="./sni-3.png" data-background-size="1080px">
 <h3 id="orgheadline74"></h3>
 </section>
-<section id="slide-orgheadline75" data-background="./sni-4.png" data-background-size="1080px">
-<h3 id="orgheadline75"></h3>
-</section>
-<section id="slide-orgheadline76" data-background="./sni-5.png" data-background-size="1080px">
-<h3 id="orgheadline76"></h3>
-</section>
-<section id="slide-orgheadline77">
-<h3 id="orgheadline77">Server Name Identification</h3>
-<ul class="fragment">
-<li>DNS resolves</li>
-
-</ul>
-<ul class="fragment">
+<section id="slide-orgheadline75">
+<h3 id="orgheadline75">Server Name Identification</h3>
+<ul>
 <li>Client connects, sends domain name as part of TLS negotiation</li>
-
-</ul>
-<ul class="fragment">
 <li>Cert for domain name presented to client</li>
 
 </ul>
 </section>
+<section id="slide-orgheadline76" data-background="./sni-5.png" data-background-size="1080px">
+<h3 id="orgheadline76"></h3>
+</section>
+<section id="slide-orgheadline77" data-background="./sni-6.png" data-background-size="1080px">
+<h3 id="orgheadline77"></h3>
+</section>
+<section id="slide-orgheadline78" data-background="./sni-7.png" data-background-size="1080px">
+<h3 id="orgheadline78"></h3>
+</section>
 </section>
 <section>
-<section id="slide-orgheadline80" data-background="./ns.gif" data-background-size="1080px">
-<h2 id="orgheadline80"></h2>
+<section id="slide-orgheadline82" data-background="./ns.gif" data-background-size="1080px">
+<h2 id="orgheadline82"></h2>
 </section>
-<section id="slide-orgheadline79" data-background="./caniuse.png" data-background-size="1080px">
-<h3 id="orgheadline79"></h3>
+<section id="slide-orgheadline80" data-background="./caniuse.png" data-background-size="1080px">
+<h3 id="orgheadline80"></h3>
+</section>
+<section id="slide-orgheadline81" data-background="./api-server-bb-nginx.svg" data-background-size="1080px">
+<h3 id="orgheadline81"></h3>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline84" data-background="./Google_2015_logo.svg" data-background-size="1080px">
+<h2 id="orgheadline84"></h2>
+</section>
+<section id="slide-orgheadline83" data-background="./Google_2015_logo-30pc.svg" data-background-size="1080px">
+<h3 id="orgheadline83">Thanks Google!</h3>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline91">
+<h2 id="orgheadline91"></h2>
+<div class="outline-text-2" id="text-orgheadline91">
+</div></section>
+<section id="slide-orgheadline85" data-background="./api-server-rails.svg" data-background-size="1080px">
+<h3 id="orgheadline85"></h3>
+</section>
+<section id="slide-orgheadline86" data-background="./api-server-react-cf-1.svg" data-background-size="1080px">
+<h3 id="orgheadline86"></h3>
+</section>
+<section id="slide-orgheadline87" data-background="./api-server-react-cf-2.svg" data-background-size="1080px">
+<h3 id="orgheadline87"></h3>
+</section>
+<section id="slide-orgheadline88" data-background="./api-server-react-cf.svg" data-background-size="1080px">
+<h3 id="orgheadline88"></h3>
+</section>
+<section id="slide-orgheadline89" data-background="./api-server-react-cf-30pc.svg" data-background-size="1080px">
+<h3 id="orgheadline89">Serverless?</h3>
+<p class="fragment">
+Less infrastructure
+</p>
+<p class="fragment">
+Lower cost
+</p>
+<p class="fragment">
+No scaling worries
+</p>
+<p class="fragment">
+No monitoring
+</p>
+</section>
+<section id="slide-orgheadline90" data-background="./cf.svg" data-background-size="1080px">
+<h3 id="orgheadline90"></h3>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline92">
+<h2 id="orgheadline92">Thanks!</h2>
 </section>
 </section>
 </div>
 </div>
-<script src="file:///Users/robertdallasgray/.nvm/v4.4.4/lib/node_modules/reveal.js/lib/js/head.min.js"></script>
-<script src="file:///Users/robertdallasgray/.nvm/v4.4.4/lib/node_modules/reveal.js/js/reveal.js"></script>
+<script src="./reveal.js/lib/js/head.min.js"></script>
+<script src="./reveal.js/js/reveal.js"></script>
 
 <script>
 // Full list of configuration options available here:
@@ -510,11 +566,11 @@ multiplex: {
 
 // Optional libraries used to extend on reveal.js
 dependencies: [
- { src: 'file:///Users/robertdallasgray/.nvm/v4.4.4/lib/node_modules/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
- { src: 'file:///Users/robertdallasgray/.nvm/v4.4.4/lib/node_modules/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: 'file:///Users/robertdallasgray/.nvm/v4.4.4/lib/node_modules/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: 'file:///Users/robertdallasgray/.nvm/v4.4.4/lib/node_modules/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
- { src: 'file:///Users/robertdallasgray/.nvm/v4.4.4/lib/node_modules/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+ { src: './reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: './reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: './reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
 });
 </script>
 </body>

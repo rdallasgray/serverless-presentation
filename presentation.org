@@ -1,5 +1,6 @@
 #+OPTIONS: reveal_title_slide:nil num:nil
 #+REVEAL_THEME: black
+#+REVEAL_ROOT: ./reveal.js
 
 * Hello!
 ** Robert Dallas Gray
@@ -317,14 +318,9 @@ Port number
   :reveal_background_size: 1080px
   :END:
 * SSL/TLS
-#+ATTR_REVEAL: :frag t
-- DNS resolves
-#+ATTR_REVEAL: :frag t
-- Client connects, begins TLS negotiation
-#+ATTR_REVEAL: :frag t
-- Cert presented to client
-#+ATTR_REVEAL: :frag t
-- Client compares requested hostname with names referenced in cert
+  - Client connects, begins TLS negotiation
+  - Cert presented to client
+  - Client compares requested hostname with names referenced in cert
 ** 
   :PROPERTIES:
   :reveal_background: ./sni-1.png
@@ -340,23 +336,24 @@ Port number
   :reveal_background: ./sni-3.png
   :reveal_background_size: 1080px
   :END:
-** 
-  :PROPERTIES:
-  :reveal_background: ./sni-4.png
-  :reveal_background_size: 1080px
-  :END:
+** Server Name Identification
+- Client connects, sends domain name as part of TLS negotiation
+- Cert for domain name presented to client
 ** 
   :PROPERTIES:
   :reveal_background: ./sni-5.png
   :reveal_background_size: 1080px
   :END:
-** Server Name Identification
-#+ATTR_REVEAL: :frag t
-- DNS resolves
-#+ATTR_REVEAL: :frag t
-- Client connects, sends domain name as part of TLS negotiation
-#+ATTR_REVEAL: :frag t
-- Cert for domain name presented to client
+** 
+  :PROPERTIES:
+  :reveal_background: ./sni-6.png
+  :reveal_background_size: 1080px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./sni-7.png
+  :reveal_background_size: 1080px
+  :END:
 * 
   :PROPERTIES:
   :reveal_background: ./ns.gif
@@ -367,3 +364,58 @@ Port number
   :reveal_background: ./caniuse.png
   :reveal_background_size: 1080px
   :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./api-server-bb-nginx.svg
+  :reveal_background_size: 1080px
+  :END:
+* 
+  :PROPERTIES:
+  :reveal_background: ./Google_2015_logo.svg
+  :reveal_background_size: 1080px
+  :END:
+** Thanks Google! 
+  :PROPERTIES:
+  :reveal_background: ./Google_2015_logo-30pc.svg
+  :reveal_background_size: 1080px
+  :END:
+* 
+** 
+  :PROPERTIES:
+  :reveal_background: ./api-server-rails.svg
+  :reveal_background_size: 1080px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./api-server-react-cf-1.svg
+  :reveal_background_size: 1080px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./api-server-react-cf-2.svg
+  :reveal_background_size: 1080px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./api-server-react-cf.svg
+  :reveal_background_size: 1080px
+  :END:
+** Serverless?
+  :PROPERTIES:
+  :reveal_background: ./api-server-react-cf-30pc.svg
+  :reveal_background_size: 1080px
+  :END:
+#+ATTR_REVEAL: :frag t
+Less infrastructure
+#+ATTR_REVEAL: :frag t
+Lower cost
+#+ATTR_REVEAL: :frag t
+No scaling worries
+#+ATTR_REVEAL: :frag t
+No monitoring
+** 
+  :PROPERTIES:
+  :reveal_background: ./cf.svg
+  :reveal_background_size: 1080px
+  :END:
+* Thanks!
