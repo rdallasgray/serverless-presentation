@@ -22,15 +22,15 @@ robert@geo.me
   :END:
 ** 
   :PROPERTIES:
+  :reveal_background: ./bp.gif
+  :END:
+** 
+  :PROPERTIES:
   :reveal_background: ./btsport.gif
   :END:
 ** 
   :PROPERTIES:
   :reveal_background: ./bupa.gif
-  :END:
-** 
-  :PROPERTIES:
-  :reveal_background: ./bp.gif
   :END:
 * Simple things
 #+ATTR_REVEAL: :frag t
@@ -279,5 +279,91 @@ Port number
 ** SSL
   :PROPERTIES:
   :reveal_background: ./cf-bb-s3-rails-route53-30pc.svg
+  :reveal_background_size: 1080px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./ssl-600-1.png
+  :reveal_background_size: 1080px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./ssl-600-2.png
+  :reveal_background_size: 1080px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./ssl-600-3.png
+  :reveal_background_size: 1080px
+  :END:
+** NOPE
+  :PROPERTIES:
+  :reveal_background: ./nope-prince.gif
+  :reveal_background_size: 1080px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./nope-octopus.gif
+  :reveal_background_size: 1080px
+  :END:
+** NOPEITY NOPE
+  :PROPERTIES:
+  :reveal_background: ./nope-parrot.gif
+  :reveal_background_size: 1080px
+  :END:
+** N O P E
+  :PROPERTIES:
+  :reveal_background: ./nope-grandpa.gif
+  :reveal_background_size: 1080px
+  :END:
+* SSL/TLS
+#+ATTR_REVEAL: :frag t
+- DNS resolves
+#+ATTR_REVEAL: :frag t
+- Client connects, begins TLS negotiation
+#+ATTR_REVEAL: :frag t
+- Cert presented to client
+#+ATTR_REVEAL: :frag t
+- Client compares requested hostname with names referenced in cert
+** 
+  :PROPERTIES:
+  :reveal_background: ./sni-1.png
+  :reveal_background_size: 1080px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./sni-2.png
+  :reveal_background_size: 1080px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./sni-3.png
+  :reveal_background_size: 1080px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./sni-4.png
+  :reveal_background_size: 1080px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./sni-5.png
+  :reveal_background_size: 1080px
+  :END:
+** Server Name Identification
+#+ATTR_REVEAL: :frag t
+- DNS resolves
+#+ATTR_REVEAL: :frag t
+- Client connects, sends domain name as part of TLS negotiation
+#+ATTR_REVEAL: :frag t
+- Cert for domain name presented to client
+* 
+  :PROPERTIES:
+  :reveal_background: ./ns.gif
+  :reveal_background_size: 1080px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./caniuse.png
   :reveal_background_size: 1080px
   :END:
