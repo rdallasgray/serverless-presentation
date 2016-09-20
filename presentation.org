@@ -237,7 +237,7 @@ Hard to change
 Hard to deploy
 #+ATTR_REVEAL: :frag t
 Hard to scale
-** 
+* 
   :PROPERTIES:
   :reveal_background: ./api-server-rails.svg
   :reveal_background_size: 1080px
@@ -248,6 +248,35 @@ Hard to scale
   :reveal_background_size: 1080px
   :END:
 ** 
+  :PROPERTIES:
+  :reveal_background: ./api-server-bb-30pc.svg
+  :reveal_background_size: 1080px
+  :END:
+#+ATTR_REVEAL: :frag t
+Less coupled 
+#+ATTR_REVEAL: :frag t
+(can develop and deploy independently) 
+#+ATTR_REVEAL: :frag t
+Easier to understand 
+#+ATTR_REVEAL: :frag t
+(one app at a time)
+#+ATTR_REVEAL: :frag t
+Easier to change 
+#+ATTR_REVEAL: :frag t
+(less chance of affecting one app by changing another)
+** 
+  :PROPERTIES:
+  :reveal_background: ./api-server-bb-30pc.svg
+  :reveal_background_size: 1080px
+  :END:
+Easier to deploy
+#+ATTR_REVEAL: :frag t
+(apps can be deployed independently)
+#+ATTR_REVEAL: :frag t
+Easier to scale
+#+ATTR_REVEAL: :frag t
+(API and apps can scale independently according to demand)
+* 
   :PROPERTIES:
   :reveal_background: ./api-server-bb-s3.svg
   :reveal_background_size: 1080px
@@ -338,12 +367,23 @@ Browser only sees one origin
 #+ATTR_REVEAL: :frag t
 Hard to deploy
 #+ATTR_REVEAL: :frag t
+(each app is a Linux instance which needs provisioning)
+#+ATTR_REVEAL: :frag t
 Big infrastructure overhead
 #+ATTR_REVEAL: :frag t
-Costly
+(each app has a full scaling/failover setup)
+#+ATTR_REVEAL: :frag t
+Costly!
+#+ATTR_REVEAL: :frag t
+(lots of redundant gear)
 * 
   :PROPERTIES:
   :reveal_background: ./cf.svg
+  :reveal_background_size: 1080px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./cf-30pc.svg
   :reveal_background_size: 1080px
   :END:
 #+ATTR_REVEAL: :frag t
@@ -503,12 +543,17 @@ April 2016: IE9 support ends!
   :END:
 ** 
   :PROPERTIES:
-  :reveal_background: ./api-server-react-cf-1.svg
+  :reveal_background: ./api-server-react-1.svg
   :reveal_background_size: 1080px
   :END:
 ** 
   :PROPERTIES:
-  :reveal_background: ./api-server-react-cf-2.svg
+  :reveal_background: ./api-server-react-2.svg
+  :reveal_background_size: 1080px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./api-server-react.svg
   :reveal_background_size: 1080px
   :END:
 ** 
@@ -528,10 +573,20 @@ Lower cost
 #+ATTR_REVEAL: :frag t
 No scaling worries
 #+ATTR_REVEAL: :frag t
-No monitoring
-** 
+Reduced monitoring
+#+ATTR_REVEAL: :frag t
+Fast, easy deployments
+** Replacing servers with services
   :PROPERTIES:
-  :reveal_background: ./cf.svg
+  :reveal_background: ./api-server-react-cf-30pc.svg
   :reveal_background_size: 1080px
   :END:
-* Thanks!
+** :)
+  :PROPERTIES:
+  :reveal_background: ./api-server-react-cf-30pc.svg
+  :reveal_background_size: 1080px
+  :END:
+* 
+- http://serverless-presentation.s3-website-eu-west-1.amazonaws.com
+- robert@geo.me
+- https://github.com/rdallasgray
