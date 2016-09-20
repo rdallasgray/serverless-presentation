@@ -189,8 +189,8 @@ Reduced monitoring
   :END:
 * 
   :PROPERTIES:
-  :reveal_background: ./api-server.svg
-  :reveal_background_size: 400px
+  :reveal_background: ./aws-architecture-elb.svg
+  :reveal_background_size: 1080px
   :END:
 ** 
   :PROPERTIES:
@@ -224,6 +224,21 @@ Reduced monitoring
   :END:
 ** 
   :PROPERTIES:
+  :reveal_background: ./api-server-jquery-5-30pc.svg
+  :reveal_background_size: 1080px
+  :END:
+#+ATTR_REVEAL: :frag t
+Highly coupled 
+#+ATTR_REVEAL: :frag t
+Hard to understand
+#+ATTR_REVEAL: :frag t
+Hard to change
+#+ATTR_REVEAL: :frag t
+Hard to deploy
+#+ATTR_REVEAL: :frag t
+Hard to scale
+** 
+  :PROPERTIES:
   :reveal_background: ./api-server-rails.svg
   :reveal_background_size: 1080px
   :END:
@@ -239,7 +254,7 @@ Reduced monitoring
   :END:
 ** Same Origin Policy
   :PROPERTIES:
-  :reveal_background: ./api-server-bb-s3-50pc.svg
+  :reveal_background: ./api-server-bb-s3-30pc.svg
   :reveal_background_size: 1080px
   :END:
 #+ATTR_REVEAL: :frag t
@@ -248,34 +263,48 @@ URI scheme
 Hostname
 #+ATTR_REVEAL: :frag t
 Port number
+* CORS
+  :PROPERTIES:
+  :reveal_background: ./api-server-bb-s3-30pc.svg
+  :reveal_background_size: 1080px
+  :END:
+#+ATTR_REVEAL: :frag t
+Cross-Origin Resource Sharing
+#+ATTR_REVEAL: :frag t
+Server sends Allow-Origin Header
+#+ATTR_REVEAL: :frag t
+Browser allows scripts on that origin to access the server
 ** 
-  :PROPERTIES:
-  :reveal_background: ./api-server-bb-s3-tp.svg
-  :reveal_background_size: 1080px
-  :END:
-* CORS!
-  :PROPERTIES:
-  :reveal_background: ./api-server-bb-s3-50pc.svg
-  :reveal_background_size: 1080px
-  :END:
-** CORS!
-  :PROPERTIES:
-  :reveal_background: ./moss-fire.gif
-  :END:
-** CORS!
-  :PROPERTIES:
-  :reveal_background: ./chicken-feast.gif
-  :END:
 ** 
   :PROPERTIES:
   :reveal_background: ./ns.gif
   :reveal_background_size: 600px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./caniuse-cors.png
   :END:
 * 
   :PROPERTIES:
   :reveal_background: ./api-server-bb.svg
   :reveal_background_size: 1080px
   :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./api-server-bb-nginx.svg
+  :reveal_background_size: 1080px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./api-server-bb-nginx-30pc.svg
+  :reveal_background_size: 1080px
+  :END:
+#+ATTR_REVEAL: :frag t
+Serve static files
+#+ATTR_REVEAL: :frag t
+Proxy-pass /api to api server
+#+ATTR_REVEAL: :frag t
+Browser only sees one origin
 ** 
   :PROPERTIES:
   :reveal_background: ./api-server-bb-nginx.svg
@@ -296,16 +325,22 @@ Port number
   :reveal_background: ./api-server-bb-nginx-elb.svg
   :reveal_background_size: 1080px
   :END:
-** Serverless
+** Serverless??
   :PROPERTIES:
   :reveal_background: ./api-server-bb-nginx-elb-30pc.svg
   :reveal_background_size: 1080px
   :END:
-** Servermore
+** Servermore!
   :PROPERTIES:
   :reveal_background: ./api-server-bb-nginx-elb-30pc.svg
   :reveal_background_size: 1080px
   :END:
+#+ATTR_REVEAL: :frag t
+Hard to deploy
+#+ATTR_REVEAL: :frag t
+Big infrastructure overhead
+#+ATTR_REVEAL: :frag t
+Costly
 * 
   :PROPERTIES:
   :reveal_background: ./cf.svg
