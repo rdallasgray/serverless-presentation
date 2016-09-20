@@ -2,38 +2,40 @@
 #+REVEAL_THEME: black
 #+REVEAL_ROOT: ./reveal.js
 
-* Hello!
-** Robert Dallas Gray
-robert@geo.me
-* Geo.me
-* Geospatial applications
-** 
+* Robert Dallas Gray
+  Developer, Geo.me
+** Geospatial applications
+*** 
   :PROPERTIES:
   :reveal_background: ./btwifiapi.gif
   :END:
-** 
+#+ATTR_REVEAL: :frag t
+Store estates of geospatial data
+#+ATTR_REVEAL: :frag t
+Provide APIs to search it performantly
+*** 
   :PROPERTIES:
   :reveal_background: ./mma.gif
   :reveal_background_size: 400px
   :END:
-** 
+*** 
   :PROPERTIES:
   :reveal_background: ./btwifi.gif
   :reveal_background_size: 400px
   :END:
-** 
+*** 
   :PROPERTIES:
   :reveal_background: ./bp.gif
   :END:
-** 
+*** 
   :PROPERTIES:
   :reveal_background: ./btsport.gif
   :END:
-** 
+*** 
   :PROPERTIES:
   :reveal_background: ./bupa.gif
   :END:
-* Simple things
+** Simple things
 #+ATTR_REVEAL: :frag t
 Performantly
 #+ATTR_REVEAL: :frag t
@@ -42,97 +44,149 @@ At scale
   :PROPERTIES:
   :reveal_background: ./aws.svg
   :END:
-** EC2
-  :PROPERTIES:
-  :reveal_background: ./aws.svg
-  :END:
-  API servers, load balancing, scaling 
 ** RDS
   :PROPERTIES:
-  :reveal_background: ./aws.svg
+  :reveal_background: ./aws-rds.svg
   :END:
-Databases (Postgres/GIS)
+Databases Servers (Postgres/GIS)
+** EC2
+  :PROPERTIES:
+  :reveal_background: ./aws-ec2.svg
+  :END:
+  API servers, load balancing, scaling 
 ** S3
   :PROPERTIES:
-  :reveal_background: ./aws.svg
+  :reveal_background: ./aws-s3.svg
   :END:
 Static file storage, artefacts 
-** Route 53
-  :PROPERTIES:
-  :reveal_background: ./aws.svg
-  :END:
-Routing
 ** Elasticache
   :PROPERTIES:
-  :reveal_background: ./aws.svg
+  :reveal_background: ./aws-elasticache.svg
   :END:
 Ephemeral storage, caching
-** SQS, SNS
+** SQS/SNS
   :PROPERTIES:
-  :reveal_background: ./aws.svg
+  :reveal_background: ./aws-sqs.svg
   :END:
 Fanning to queues for offline tasks
+** DynamoDB
+  :PROPERTIES:
+  :reveal_background: ./aws-dynamo.svg
+  :END:
+Specialised data
+** Route 53
+  :PROPERTIES:
+  :reveal_background: ./aws-route53.svg
+  :END:
+Routing
 ** CloudFront
   :PROPERTIES:
-  :reveal_background: ./aws.svg
+  :reveal_background: ./aws-cf.svg
   :END:
-Edge caching and ... ?
+Edge caching etc
+** 
 * Serverless Architecture
 ** 
 ** 
   :PROPERTIES:
   :reveal_background: ./aws-architecture-rds.svg
-  :reveal_background_size: 400px
+  :reveal_background_size: 1080px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./aws-architecture-rds-instance.svg
+  :reveal_background_size: 1080px
   :END:
 ** 
   :PROPERTIES:
   :reveal_background: ./aws-architecture-ec2.svg
-  :reveal_background_size: 400px
+  :reveal_background_size: 1080px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./aws-architecture-ec2-instances.svg
+  :reveal_background_size: 1080px
   :END:
 ** 
   :PROPERTIES:
   :reveal_background: ./aws-architecture-asg.svg
-  :reveal_background_size: 400px
+  :reveal_background_size: 1080px
   :END:
 ** 
   :PROPERTIES:
   :reveal_background: ./aws-architecture-elb.svg
-  :reveal_background_size: 400px
+  :reveal_background_size: 1080px
   :END:
 ** 
   :PROPERTIES:
-  :reveal_background: ./aws-architecture-cf.svg
-  :reveal_background_size: 400px
-  :END:
-** 
-  :PROPERTIES:
-  :reveal_background: ./aws-architecture-route53.svg
-  :reveal_background_size: 400px
+  :reveal_background: ./aws-architecture-database.svg
+  :reveal_background_size: 1080px
   :END:
 ** 
   :PROPERTIES:
   :reveal_background: ./aws-architecture-dynamo.svg
-  :reveal_background_size: 400px
+  :reveal_background_size: 1080px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./aws-architecture-compute.svg
+  :reveal_background_size: 1080px
   :END:
 ** 
   :PROPERTIES:
   :reveal_background: ./aws-architecture-lambda.svg
-  :reveal_background_size: 400px
+  :reveal_background_size: 1080px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./aws-architecture-load-balancing.svg
+  :reveal_background_size: 1080px
   :END:
 ** 
   :PROPERTIES:
   :reveal_background: ./aws-architecture-api-gateway.svg
-  :reveal_background_size: 400px
+  :reveal_background_size: 1080px
   :END:
 ** 
   :PROPERTIES:
-  :reveal_background: ./aws-architecture-s3.svg
-  :reveal_background_size: 400px
+  :reveal_background: ./aws-architecture-serverless.svg
+  :reveal_background_size: 1080px
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./aws-architecture-serverless-2.svg
+  :reveal_background_size: 1080px
   :END:
 ** Replacing servers with services
-** Serverless
+  :PROPERTIES:
+  :reveal_background: ./aws-architecture-serverless-2-30pc.svg
+  :reveal_background_size: 1080px
+  :END:
+#+ATTR_REVEAL: :frag t
+Less infrastructure
+#+ATTR_REVEAL: :frag t
+Use what you need
+#+ATTR_REVEAL: :frag t
+Lower cost
+#+ATTR_REVEAL: :frag t
+Easy scaling
+#+ATTR_REVEAL: :frag t
+Reduced monitoring
+* Serverless
+  :PROPERTIES:
+  :reveal_background: ./aws-architecture-serverless-2-30pc.svg
+  :reveal_background_size: 1080px
+  :END:
 ** Less Servers
+  :PROPERTIES:
+  :reveal_background: ./aws-architecture-serverless-2-30pc.svg
+  :reveal_background_size: 1080px
+  :END:
 ** Fewer Servers
+  :PROPERTIES:
+  :reveal_background: ./aws-architecture-serverless-2-30pc.svg
+  :reveal_background_size: 1080px
+  :END:
 * 
   :PROPERTIES:
   :reveal_background: ./api-server.svg
