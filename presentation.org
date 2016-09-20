@@ -346,6 +346,12 @@ Costly
   :reveal_background: ./cf.svg
   :reveal_background_size: 1080px
   :END:
+#+ATTR_REVEAL: :frag t
+Register multiple origins
+#+ATTR_REVEAL: :frag t
+Route requests using behaviours
+#+ATTR_REVEAL: :frag t
+Proxying!
 ** 
   :PROPERTIES:
   :reveal_background: ./cf-small.svg
@@ -363,12 +369,12 @@ Costly
   :END:
 ** 
   :PROPERTIES:
-  :reveal_background: ./cf-bb-s3-rails-route53.svg
+  :reveal_background: ./cf-bb-s3-rails-30pc.svg
   :reveal_background_size: 1080px
   :END:
 ** SSL
   :PROPERTIES:
-  :reveal_background: ./cf-bb-s3-rails-route53-30pc.svg
+  :reveal_background: ./cf-bb-s3-rails-30pc.svg
   :reveal_background_size: 1080px
   :END:
 ** 
@@ -407,9 +413,14 @@ Costly
   :reveal_background_size: 1080px
   :END:
 * SSL/TLS
-  - Client connects, begins TLS negotiation
-  - Cert presented to client
-  - Client compares requested hostname with names referenced in cert
+#+ATTR_REVEAL: :frag t
+Client connects, begins TLS negotiation
+#+ATTR_REVEAL: :frag t
+Cert presented to client
+#+ATTR_REVEAL: :frag t
+Client compares requested hostname with names referenced in cert
+#+ATTR_REVEAL: :frag t
+One IP address can only present one cert
 ** 
   :PROPERTIES:
   :reveal_background: ./sni-1.png
@@ -426,8 +437,10 @@ Costly
   :reveal_background_size: 1080px
   :END:
 ** Server Name Identification
-- Client connects, sends domain name as part of TLS negotiation
-- Cert for domain name presented to client
+#+ATTR_REVEAL: :frag t
+Client connects, sends domain name as part of TLS negotiation
+#+ATTR_REVEAL: :frag t
+Cert for domain name presented to client
 ** 
   :PROPERTIES:
   :reveal_background: ./sni-5.png
@@ -446,7 +459,7 @@ Costly
 * 
   :PROPERTIES:
   :reveal_background: ./ns.gif
-  :reveal_background_size: 1080px
+  :reveal_background_size: 600px
   :END:
 ** 
   :PROPERTIES:
@@ -455,7 +468,12 @@ Costly
   :END:
 ** 
   :PROPERTIES:
-  :reveal_background: ./api-server-bb-nginx.svg
+  :reveal_background: ./api-server-bb-nginx-elb.svg
+  :reveal_background_size: 1080px
+  :END:
+** :(
+  :PROPERTIES:
+  :reveal_background: ./api-server-bb-nginx-elb-30pc.svg
   :reveal_background_size: 1080px
   :END:
 * 
@@ -463,6 +481,15 @@ Costly
   :reveal_background: ./Google_2015_logo.svg
   :reveal_background_size: 1080px
   :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./Google_2015_logo-30pc.svg
+  :reveal_background_size: 1080px
+  :END:
+#+ATTR_REVEAL: :frag t
+August 2015: IE8 support ends!
+#+ATTR_REVEAL: :frag t
+April 2016: IE9 support ends!
 ** Thanks Google! 
   :PROPERTIES:
   :reveal_background: ./Google_2015_logo-30pc.svg
